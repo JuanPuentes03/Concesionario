@@ -1,0 +1,26 @@
+<div>
+ <form [formGroup]="concesionarioForm"(ngSubmit)="addConcesionario()">
+    <input type="hidden" name="id" id="txtId" formControlName="id">
+    <div class="form-group">
+      <label for="name">Nombre</label>
+      <input type="text" class="form-control" name="txtname" formControlName="nombre" id="txtname">
+    </div>
+    <div class="form-group">
+      <label for="name">Direccion</label>
+      <input type="text" class="form-control" name="txtdireccion" formControlName="direccion" id="txtdireccion">
+    </div>
+    <div class="form-group">
+      <label for="name">Telefono</label>
+      <input type="text" class="form-control" name="txtphone" formControlName="telefono" id="txtphone">
+    </div>
+    <div class="form-group">
+      <label for="name">Ciudad</label>
+      <input type="text" class="form-control" name="txtciudad" formControlName="ciudad" id="txtciudad">
+    </div>
+
+    <div>
+      <input type="submit" value="Guardar"/>
+    </div>
+  </form>
+</div>
+

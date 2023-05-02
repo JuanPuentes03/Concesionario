@@ -1,0 +1,22 @@
+<div class="container">
+    <h3>Lista Marcas</h3>
+    <div class="table-dark">
+        <table>
+            <thead>
+                <th>id</th>
+                <th>Marca</th>
+                <th>Acciones</th>
+            </thead>
+            <tbody>
+                <tr *ngFor="let Marcas of listMarca">
+                    <td>{{Marcas.id_Marca}}</td>
+                    <td>{{Marcas.marca}}</td>
+                    <td>
+                      <a class="btn btn-success" href="#">Editar</a>
+                      <a class="btn btn-danger" href="#">Eliminar</a>
+                     </td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+</div>

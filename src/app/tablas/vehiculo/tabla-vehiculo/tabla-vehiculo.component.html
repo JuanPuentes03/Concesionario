@@ -1,0 +1,32 @@
+<div class="container">
+    <h3>Lista Vehiculos</h3>
+    <div class="table-dark">
+        <table>
+            <thead>
+                <th>id</th>
+                <th>Modelo</th>
+                <th>Centimetros Cubicos</th>
+                <th>Placa</th>
+                <th>Precio</th>
+                <th>Color</th>
+                <th>Acciones</th>
+            </thead>
+            <tbody>
+                <tr *ngFor="let Vehiculos of listVehiculo">
+                    <td>{{Vehiculos.id_Vehiculo}}</td>
+                    <td>{{Vehiculos.modelo}}</td>
+                    <td>{{Vehiculos.centimetrosCubicos}}</td>
+                    <td>{{Vehiculos.placa}}</td>
+                    <td>{{Vehiculos.precio}}</td>
+                    <td>{{Vehiculos.color}}</td>
+                    <td>
+                      <a class="btn btn-success" href="#">Editar</a>
+                      <a class="btn btn-danger" href="#">Eliminar</a>
+                     </td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+
+
+</div>

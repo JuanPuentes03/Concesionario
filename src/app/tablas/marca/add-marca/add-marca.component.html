@@ -1,0 +1,13 @@
+<div>
+  <form [formGroup]="marcaForm"(ngSubmit)="addMarca()">
+    <input type="hidden" name="id" id="txtId" formControlName="id">
+    <div class="form-group">
+      <label for="name">Marca</label>
+      <input type="text" class="form-control" name="txtmarca" formControlName="marca" id="txtmarca">
+    </div>
+
+    <div>
+      <input type="submit" value="Guardar"/>
+    </div>
+  </form>
+</div>

@@ -1,0 +1,29 @@
+<div class="container">
+    <h3>Lista Concesionarios</h3>
+    <div class="table">
+        <table>
+            <thead class="table-dark">
+                <th>id</th>
+                <th>Nombre</th>
+                <th>Direccion</th>
+                <th>Telefono</th>
+                <th>Ciudad</th>
+                <th>Acciones</th>
+            </thead>
+            <tbody>
+                <tr *ngFor="let item of listConcesionario">
+                    <td>{{item.id_Concesionario}}</td>
+                    <td>{{item.nombre}}</td>
+                    <td>{{item.direccion}}</td>
+                    <td>{{item.telefono}}</td>
+                    <td>{{item.ciudad}}</td>
+                    <td>
+                      <a class="btn btn-success" href="#">Editar</a>
+                      <a class="btn btn-danger" href="#">Eliminar</a>
+                     </td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+</div>
+

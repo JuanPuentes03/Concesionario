@@ -1,0 +1,27 @@
+<div class="container">
+    <h3>Lista Vehiculos</h3>
+    <div class="table-dark">
+        <table>
+            <thead>
+                <th>id</th>
+                <th>Fecha Venta</th>
+                <th>Metodos de Pago</th>
+                <th>Monto Total</th>
+                <th>Acciones</th>
+            </thead>
+            <tbody>
+                <tr *ngFor="let Venta of listVenta">
+                    <td>{{Venta.id_Venta}}</td>
+                    <td>{{Venta.fechaVenta}}</td>
+                    <td>{{Venta.metodosDePago}}</td>
+                    <td>{{Venta.montoTotal}}</td>
+                    <td>
+                      <a class="btn btn-success" href="#">Editar</a>
+                      <a class="btn btn-danger" href="#">Eliminar</a>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+</div>
+

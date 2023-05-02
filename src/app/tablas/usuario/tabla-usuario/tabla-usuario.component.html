@@ -1,0 +1,30 @@
+<div class="container">
+     <h3>Lista Usuarios</h3>
+     <div class="table">
+         <table>
+             <thead class="table-dark">
+                 <th>id</th>
+                 <th>Nombre</th>
+                 <th>Apellido</th>
+                 <th>correo</th>
+                 <th>telefono</th>
+                 <th>fecha de nacimiento</th>
+                 <th>Acciones</th>
+             </thead>
+             <tbody>
+                  <tr *ngFor="let Usuarios of listUsuario">
+                       <td>{{Usuarios.id_Usuario}}</td>
+                       <td>{{Usuarios.nombre}}</td>
+                       <td>{{Usuarios.apellido}}</td>
+                       <td>{{Usuarios.correo}}</td>
+                       <td>{{Usuarios.telefono}}</td>
+                       <td>{{Usuarios.fechaNacimiento}}</td>
+                       <td>
+                        <a class="btn btn-success" href="#">Editar</a>
+                        <a class="btn btn-danger" href="#">Eliminar</a>
+                       </td>
+                   </tr>
+             </tbody>
+         </table>
+    </div>
+</div>
